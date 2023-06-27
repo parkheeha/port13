@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re:nk</title>
+    <link href="css/style6.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <div id="header">
+        <h1><a href="#"><img src="img/logo.gif"></a></h1>
+        <img class="ham" src="img/menu.png">
+        <ul>
+            <li><a href="#">STORY</a></li>
+            <li><a href="#">PRODUCT</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">마이페이지</a></li>
+            <li><a href="#">멤버십</a></li>
+            <li><a href="#">고객센터</a></li>
+        </ul>
+
+
+    </div>
+    <div id="visual">
+        
+        <div class="vi">
+            
+            <img class="bnr_1" src="img/bnr_1.png">
+            <img class="bnr_2" src="img/bnr_2_1.png">
+            <a href="#"><img src="img/bnr_btn.gif"></a>
+        </div>
+        
+        <ul>
+            <li><a href="#">STORY</a></li>
+            <li><a href="#">PRODUCT</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">마이페이지</a></li>
+            <li><a href="#">멤버십</a></li>
+            <li><a href="#">고객센터</a></li>
+        </ul>
+    </div>    
+    <div id="container">
+        <div class="topcon">
+            
+            <div class="box1">
+                <img src="img/top_img1.jpg">
+                <h4>RE:starter Beauty College</h4>
+                <p>뷰티컬리지 선정자 총220만원 상당의스킨케어 + 재취업관련 프로그램을 제공</p>
+            </div>
+        
+            <div class="box1">
+                <img src="img/top_img2.jpg">
+                <h4>Club Re:NK 멤버십 혜택</h4>
+                <p>Re:NK 고객님을 위해 마련된 아름답고 특별한 혜택. Club Re:NK로 초대합니다.</p>
+            </div>
+            <div class="box3">
+                <img src="img/top_img3.jpg">
+                <div class="box3_1">
+                    <img src="img/top_img4.gif">
+                    <div class="line"></div>
+                    <h4>Re:NK 브랜드 스토리</h4>
+                    <p>Re:NK만의 새로운 뷰티 테크놀로지 이야기가 시작됩니다. Re:NK 셀 테크놀로지로 당신의 피부 셀 에너지를 올려보세요.</p>
+                    <a href="#">더보기 >></a>
+                </div>
+            </div>
+        </div>
+        <div class="bottomcon">
+            
+            <div class="b_box1">
+                <img src="img/bottom_img1.gif">
+                <div class="line"></div>
+                <h4>Re:NK 이벤트</h4>
+                <p>Re:NK에서 진행되는 이벤트에 참여해 주세요. 다양한 상품과 행사를 통해 특별한 혜택을 드립니다.</p>
+                <a href="#">더보기 >></a>
+            </div>
+            <img src="img/bottom_img2.jpg">
+            <img src="img/bottom_img3.jpg">
+            <img src="img/bottom_img4.jpg">
+        </div>
+    </div>
+    
+    </div>
+    <div id="footer">
+        
+        <a href="#"> <img src="img/btn_menu.gif"></a>
+        <div class="f_bbox">
+             
+            <div class="f_box1">
+                <p><span>고객서비스센터 080-200-5100</span> (상담시간 평일 09:00~18:00, 주말/국·공휴일 상담불가)<br> 서울시 중구 서소문로 88 중앙일보빌딩 11층~17층 충남 공주시 유구읍 유구마곡사로 136-23<br> 코웨이주식회사 대표이사 김동현 사업자등록번호 307-81-06054<br> 통신판매 신고 제2005-21호[사업자 정보확인]</p>
+                <p class="copy">COPYRIGHT COWAY CO,. LTD.ALL RIGHTS RESERVED.</p>
+            </div>
+            <div class="f_box2">
+                <img src="img/wa.png">
+                <div class="f_box_r">
+                    
+                    <div class="f_box2_1">
+                        <p><a href="#">개인정보취급방침</a></p>
+                        <p><a href="#">개인정보처리방침</a></p>
+                        <p><a href="#">이용약관</a></p>
+                        <p><a href="#">이메일무단수집거부</a></p>
+                    </div>
+                    <div class="f_box2_2">
+                        <a href="#"><img src="img/btn_foot01.gif"></a>
+                        <a href="#"><img src="img/btn_foot02.gif"></a>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+    
+    <script>
+        /*   toggle이용
+        $(".ham").on("click",function(){
+            $("li").toggle(1000);
+        })
+        */
+        let i = 0;
+    
+
+
+    $("#header .ham").on("click",function(){
+        if(i == 0){
+        
+            $("#header ul").stop().animate({opacity:"1" });
+            i = 1;
+        }else{
+        
+            $("#header ul").stop().animate({opacity:"0"});
+        i = 0;
+        }        
+    
+    });
+    
+
+    </script>
+</body>
+</html>

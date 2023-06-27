@@ -1,0 +1,14 @@
+*{padding:0px; margin:0px;}
+li{list-style:none;}
+a{text-decoration:none; color:#333;}
+
+#container{width:1100px;  flex-wrap:wrap; border:1px solid #f00; margin:0px auto;}
+.topcon{display:flex; flex-direction:row; }
+.topright{display:flex;}
+
+.bottomcon{display:flex; flex-direction:row; justify-content:space-between;}
+
+.topcon ul{}
+
+.topcon ul{width:250px;}
+.bottomcon .left{width:250px;}
